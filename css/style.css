@@ -13,6 +13,17 @@ body {
     box-sizing: border-box;
     padding-top: 30px;
 }
+.footer {
+    width: 100%;
+    max-width: 1180px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+} 
 .wrap {
     width: 100%;
     max-width: 1180px;
@@ -66,7 +77,7 @@ body {
 }
 .text-main {
     font-size: 32px;
-    line-heigh t: 51px;
+    line-height: 51px;
     width: 741px;
     color: #4F4F4F;
 }
@@ -124,11 +135,28 @@ body {
 /*клиенты*/
 .clients {
     display: grid;
-    grid-template: 120px 120px / repeat(4, 25%);
+    grid-template: repeat(2, 1fr) / repeat(4, 25%);
     text-align: center;
+    grid-row-gap: 40px;
 }
 /*команда*/
 .team {
     display: grid;
-    grid-template: repeat(3, 33%) / repeat(3, 33%);    
+    grid-template: repeat(3, 1fr) / repeat(3, 33%);  
+    grid-row-gap: 40px;  
+}
+.team-item {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.team-item img {
+    margin-right: 40px;
+}
+.team-item>div {
+    flex-basis: calc(100% - 100px);
+}
+/*футер*/
+.footer {
+    background-color: #E5E5E5;
 }
