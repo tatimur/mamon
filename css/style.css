@@ -19,6 +19,7 @@ body {
     margin: 0 auto;
     padding-left: 15px;
     padding-right: 15px;
+    box-sizing: border-box;
 }
 /*меню*/
 .nav {
@@ -58,6 +59,25 @@ body {
     line-height: 28px; 
 }
 /*первый блок*/
+.title-main {
+    font-size: 57px;
+    line-height: 65px;
+    font-weight: bold;
+}
+.text-main {
+    font-size: 32px;
+    line-heigh t: 51px;
+    width: 741px;
+    color: #4F4F4F;
+}
+.button {
+    background: #5528FF;
+    border-radius: 10px;
+    color: white;
+    padding: 5px 45px;
+    border: none;
+    font-size: 24px;
+}
 .page {
     padding: 40px 0;
     position: relative;
@@ -67,4 +87,48 @@ body {
 }
 .page h2 {
     position: absolute;
+    top: -24px;
+    font-size: 14px;
+    font-weight: 300;
+    background-color: #fff;
+    padding: 5px 15px;
+    color: #C2C2C2;
+}
+/*сервисы*/
+.services-item {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.srevices {
+    display: grid;
+    grid-template: 50% 50% / 50% 50%;
+}
+.services_img {
+    text-align: center;
+    flex-basis: 120px; 
+}
+.services_text {
+    flex-basis: calc(120% - 100px);
+}
+.srevices h3 {
+    font-size: 28px;
+    line-height: 32px;
+    font-weight: 400;
+}
+.srevices p {
+    font-size: 14px;
+    line-height: 16px;
+    color: #B2B2B2;
+}
+/*клиенты*/
+.clients {
+    display: grid;
+    grid-template: 120px 120px / repeat(4, 25%);
+    text-align: center;
+}
+/*команда*/
+.team {
+    display: grid;
+    grid-template: repeat(3, 33%) / repeat(3, 33%);    
 }
